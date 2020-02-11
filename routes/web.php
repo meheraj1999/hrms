@@ -15,35 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/minus/{a}/{b}',function($a,$b){
-		echo $a-$b; })->where(['a'=>'[0-9]+','b'=>'[0-9]']);
-
-	Route::get('/sum/{a}/{b}',function($a,$b){
-		echo $a+$b;
-	})->where(['a'=>'[0-9]+','b'=>'[0-9]']);
-	Route::get('/divide/{a}/{b}',function($a,$b){
-		echo $a/$b;
-	})->where(['a'=>'[A-Z]+','b'=>'[0-9]']);
-	Route::get('/into/{a}/{b}',function($a,$b){
-		echo $a*$b;
-	})->where(['a'=>'[0-9]+','b'=>'[0-9]']);
-	Route::get('/divide/{a}/{b}',function($a,$b){
-		echo $a/$b;
-	})->where(['a'=>'[0-9]+','b'=>'[0-9]']);
-
-	Route::get('/namta/{a}',function($a){
-		for($b=1; $b<=10;$b++){
-			echo $a*$b;
-		}
-	})->where(['a'=>'[0-9]+','b'=>'[0-9]']);
-
-
-Route::get('/student',function(){
-return view($form);   
-})
-
-
-
-@include()
-{{value}}//echo korar jonno//
-
+Route::get('/student/', function () {
+    return view('student');
+});
