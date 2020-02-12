@@ -47,6 +47,17 @@
           <option >Icst</option>
           </select>
           </div>
+
+     <div class="form-group">
+      <label>Mobile number</label>
+      <input type="text" class="form-control"  name="mobile_number">
+    </div>
+
+    <div class="form-group">
+      <label>Address</label>
+      <input type="text" class="form-control"  name="address">
+    </div>
+
       </div>
 </div>
 
